@@ -24,10 +24,6 @@ local os_execute = os.execute
 local function execute(...)
   local success = os_execute(...)
 
-  if type(success) == 'number' then
-    success = success == 0
-  end
-
   return success
 end
 
